@@ -53,7 +53,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-const Navbar = () => {
+const Appbar = () => {
   return (
     <>
       <div className='nav'>
@@ -71,13 +71,14 @@ const Navbar = () => {
               
             </SearchIconWrapper>
             <StyledInputBase
+              style={{marginBottom:'5px'}}
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
-            <SearchIcon />
+            <SearchIcon style={{marginTop:'20px'}} />
           </Search></div>
         <div className='avatar'>
-         <img style={{width:'30px',height:'30px' ,borderRadius:'50%'}}  src={rectangle35} alt='avatar'/>
+         <img style={{width:'35px',height:'35px' ,borderRadius:'50%'}}  src={rectangle35} alt='avatar'/>
          <div className='ham-burger'>
          <IconButton
             size="large"
@@ -97,4 +98,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Appbar;

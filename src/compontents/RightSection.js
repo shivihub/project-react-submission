@@ -12,8 +12,8 @@ import group63 from '../images/Group63.png'
 
 const RightCard = () => {
     return (
-        <div class='right-side'>
-            <div class='doubt'>
+        <div className='right-section'>
+            <div className='doubt'>
                 <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'5%'}}>
                     <div><img style={{width:'57%'}}src={image2} alt="pic"/></div>
                     <div>

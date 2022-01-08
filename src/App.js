@@ -1,15 +1,13 @@
-
-import './App.css';
-import Body from './compontents/Body';
-import Navbar from './compontents/Navbar';
+import Body from './compontents/mainSection';
+import Appbar from './compontents/Appbar.js';
 import footer from './images/footer.jpg';
 
 function App() {
   return (
     <>
-     <Navbar/>
+     <Appbar/>
      <Body/>
-     <div><img style={{width:'100%'}}src={footer} alt="footer"/></div>
+     <div><img className='footer' src={footer} alt="footer"/></div>
      
     </>
   );

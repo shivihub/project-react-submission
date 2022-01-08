@@ -2,24 +2,24 @@ import { PatternOutlined } from '@mui/icons-material';
 import React from 'react'
 import thirdpic from '../images/Group61.png';
 import onepic from '../images/Group62.png';
-import LeftCard from './LeftCard';
-import RightCard from './RightCard';
+import LeftCard from './LeftSection';
+import RightCard from './RightSection';
 import pattern from '../images/pattern.png'
 
-const Body = () => {
+const mainSection = () => {
     return (
         <>
           <div className='head'>
-              <div className='one'>
+              <div className='first-div' >
               <img src= {onepic} alt="my images" />
-              <img src= {pattern} style={{top:'1800px'}}alt="my images" />
+              <img src= {pattern} style={{top:'1775px'}}alt="my images" />
               </div>
-              <div className='two'>
+              <div className='second-div'>
                 <LeftCard/>
                 <RightCard/>
                   
               </div>
-              <div className='three'>
+              <div className='third-div'>
                   <img src= {thirdpic} alt="my images" />
               </div>
           </div>  
@@ -27,4 +27,4 @@ const Body = () => {
     )
 }
 
-export default Body
+export default mainSection;
